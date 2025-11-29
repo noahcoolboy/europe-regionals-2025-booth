@@ -9,7 +9,7 @@ fun main() {
        .toInt()
    println(buildString {
        for (i in s.indices) {
-           append(s[i * coef % s.length])
+           append(s[((i.toLong() * coef) % s.length).toInt()])
        }
    })
 }
