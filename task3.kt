@@ -17,7 +17,7 @@ fun main() {
        return pt == b.size
    }
    var lf = -1
-   var rg = a.size
+   var rg = a.size + 1
    while (rg - lf > 1) {
        val mid = (lf + rg) / 2
        if (check(mid)) {
